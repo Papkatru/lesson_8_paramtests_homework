@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'com.codeborne:selenide:6.7.3'
+    testImplementation 'com.codeborne:selenide:6.6.6'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
 }
 
