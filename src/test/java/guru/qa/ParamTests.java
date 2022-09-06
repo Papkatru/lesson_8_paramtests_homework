@@ -58,7 +58,7 @@ public class ParamTests {
     @ParameterizedTest(name = "На языке \"{0}\" лого отображается")
     void vkLocalizationFooterEnumTest(Lang lang) {
         open("https://vk.com/");
-        $(".footer_lang").$(byTextCaseInsensitive(lang.name())).click();
+        $(".footer_lang").$(byTextCaseInsensitive(lang.toString())).click();
         $(".TopHomeLink").shouldBe(visible);
     }
 }
